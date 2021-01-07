@@ -2,7 +2,7 @@
 
 <p>
   Название сайта: Barbershop<br>
-  Домен: <a href="">not-ready-yet</a>
+  Домен: <a href="https://borodinsky-master.vercel.app/">Borodinsky-Vercel</a>
 </p>
     
 <h2>Общие технические требования</h2>
