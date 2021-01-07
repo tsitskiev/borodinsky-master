@@ -1,0 +1,82 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+    background-color: $black;
+    color: $white;
+    border: none;
+    width: 140px;
+    padding: 8px 0px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background-color: $brown;
+    }
+    &:disabled {
+        cursor: default;
+        opacity: 0.4;
+        &:hover {
+            background-color: $black;
+        }
+    }
+}
+
+.input {
+    background-color: transparent;
+    outline: none;
+    color: $black;
+    width: 106px;
+    padding: 8px 15px;
+    border: 2px solid $black;
+    margin: 0 0px 20px 0;
+    &::placeholder {
+        color: $black;
+        transition: 0.3s ease; 
+    }
+    &:focus {
+        border-color: $brown;
+        &::placeholder {
+            text-indent: 500px;
+            transition: 0.3s ease;
+        }
+    }
+}
+
+.label {
+    position: relative;
+    display: block;
+    padding: 5px 0 5px 43px;
+    cursor: pointer;
+    &:hover {
+        color:$brown;
+    }
+}
+
+input[type='checkbox'] {
+    display: none;
+    + label:before  {
+        position: absolute;
+        content: '';
+        width: 18px;
+        height: 18px;
+        border: 2px solid $black;
+        top: calc(50% - 11px);
+        left: 0;
+    } 
+    &:checked + label:before {
+        @include sprites(-1px, -1px, 18px, 18px);
+    }
+} 
+
+input[type='radio'] {
+    display: none;
+    + label:before {
+        @include sprites(0, -415px, 20px, 20px);
+        top: calc(50% - 10px);
+        left: 0;
+    }  
+    &:checked + label:before {
+        @include sprites(0, -345px, 20px, 20px);
+    }  
+}

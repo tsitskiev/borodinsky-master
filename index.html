@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/favicon.ico" type="image/ico">
+</head>
+<body>
+    <header class='main-header'>
+        <div class="container">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li><a href="#" class="menu__current-page">Главная</a></li>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="price.html">Прайс-лист</a></li>
+                    <li><a href="market.html">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#" class="menu__login">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="logo">
+            <a href="#"><img src="./img/logo.png" alt="company-logo"></a> 
+        </div>
+        <section class="features">
+            <div class="features__item col-1-3">
+                <h2 class="features__title">Быстро</h2>
+                <p>Мы делаем свою работу быстро! Два часа пролетят незаметно, и вы - счастливый обладатель стильной стрижки-минутки!</p>
+            </div>
+            <div class="features__item col-1-3">
+                <h2 class="features__title">Круто</h2>
+                <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае, внешне.</p>
+            </div>
+            <div class="features__item col-1-3">
+                <h2 class="features__title">Дорого</h2>
+                <p>Наши мастера - профессионалы своего дела 
+                   <br>
+                   и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+            </div>
+        </section>
+        <section class="content">
+            <div class="content__column">
+                <h2 class="content__title">Новости</h2>
+                <ul class="content__news">
+                    <li>У нас появился Егерьмейстер, так что пропустите стаканчик прямо во время стрижки!
+                        <br>
+                        <time datetime="2020-09-12">12 сентября</time>
+                    </li>
+                    <li>В команде появился легендарный Борис the Blade или Борис хрен пострижешь! Испытайте этого сумасшедшего русского в деле!
+                        <br>
+                        <time datetime="2020-11-11">11 ноября</time>
+                    </li>
+                </ul>
+                <a href="#" class="btn content__news">Все новости</a>
+            </div>
+            <div class="content__column">
+                <h2 class="content__title">Фотогалерея</h2>
+                <div class="content__gallery sl-container">
+                    <figure class="content__slider sl-track">
+                            <a href="#"><img class="sl-items" src="./img/content-gallery-photo-1.jpg" alt="studio photo1"></a>
+                            <a href="#"><img class="sl-items" src="./img/content-gallery-photo-1.jpg" alt="studio photo2"></a>
+                            <a href="#"><img class="sl-items" src="./img/content-gallery-photo-1.jpg" alt="studio photo3"></a>
+                            <a href="#"><img class="sl-items" src="./img/content-gallery-photo-1.jpg" alt="studio photo4"></a>
+                    </figure>
+                </div>
+                <button class="btn content__btn-prev" >Назад</button>
+                <button class="btn content__btn-next">Вперёд</button>
+            </div>
+        </section>
+        <section class="content">
+            <div class="content__column">
+                <h2 class="content__title">Контакты</h2>
+                <ul class="content__contacts">
+                    <li>Барбершоп «Бородинский»
+                        <br>
+                        Адрес: г.Москва, ул. Собаки Павлова, д. 13
+                        <br>
+                        Телефон: +7 (495) 666-02-666
+                    </li>
+                    <li>Время работы:
+                        <br>
+                        пн - пт: с 10:00 до 22:00
+                        <br>
+                        сб - вс: с 10:00 до 19:00
+                    </li>
+                </ul>
+                <button class="btn content__btn-prev">Как проехать</button>
+                <button class="btn content__btn-next">Обратная связь</button>
+            </div>
+            <div class="content__column">
+                <h2 class="content__title">Записаться</h2>
+                <p>Укажите желаемую дату и время, и мы свяжемся с вами для подтверждения брони</p>
+                    <form method='POST' action='' class="content__form">
+                        <input type="date" class="input content__input content__input_small" placeholder="">
+                        <input type="time" class="input content__input content__input_small" placeholder="">
+                        <input type="text" class="input content__input content__input_small" placeholder="Ваше имя">
+                        <input type="tel" class="input content__input content__input_small" placeholder="Телефон">
+                        <button type='submit' class="btn content__submit">Отправить</button>
+                    </form>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="flex-row">
+                <div class="page-footer__contact col-1-3">
+                    <p>Барбершоп «Бородинский»
+                        <br>
+                        Адрес: г.Москва, ул. Собаки Павлова, д. 13
+                        <br>
+                        Телефон: +7 (495) 666-02-666
+                    </p>
+                </div>
+                <div class="page-footer__social col-1-3">
+                    <p>Тусим вместе!</p>
+                    <a href="#" class="page-footer__social-icons vk-ico"></a>
+                    <a href="#" class="page-footer__social-icons fb-ico"></a>
+                    <a href="#" class="page-footer__social-icons insta-ico"></a>
+                </div>
+                <div class="page-footer__copyright col-1-3">
+                    <div class="page-footer__col">
+                        <p>Дизайн сайта</p>
+                        <button class="page-footer__design btn">Дизайнер.рф</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <modal class="login-modal-window">
+        <form action="" class="login-modal-window__form" method="POST">
+            <h3 class="login-modal-window__title">Личный кабинет</h3>
+            <p>введите пожалуйста свой логин и пароль:</p>
+            <input type="text" class="input login-modal-window__input login-modal-window__input_log-icon" placeholder="Логин" id="login" required>
+            <input type="password" class="input login-modal-window__input login-modal-window__input_pass-icon" placeholder="Пароль" id="password" required>
+            <input type="checkbox" class='' name="" id="remember-login">
+            <label for="remember-login" class="label">Запомнить меня</label>
+            <a href="#" class="login-modal-window__restore-btn" id="restore-btn">Я забыл пароль</a>
+            <button type="submit" class="login-modal-window__submit btn">Войти</button>
+            <a href="#" class="login-modal-window__close-btn" id="close-btn"></a>
+            <a href="#" class="login-modal-window__register" id="register-btn" style="text-align: center; margin-top: 10px;">Зарегистрироваться</a>
+        </form>
+    </modal>
+
+    <div class="modal-wrapper">
+        <modal class="gallery-modal-window">
+            <img class="gl-items" src="./img/content-gallery-photo-1-big.jpg" alt="big studio photo1">
+        </modal>
+    </div>
+    
+    <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/gallery-modal.js"></script>
+</body>
+</html>

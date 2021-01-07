@@ -1,0 +1,53 @@
+.page-footer {
+  min-width: $small;
+  color: $white;
+  padding: 60px 0;
+  background: #333 url('../img/footer-background.jpg') repeat;
+  box-shadow: inset 0 60px 20px -30px rgba(0, 0, 0, 0.5);
+  margin-top: 60px;
+  &__social {
+    text-align: center;
+    p {
+      padding-bottom: 5px;
+    }
+  }
+  &__copyright {
+    display: flex;
+    justify-content: flex-end;
+    p {
+      padding-bottom: 5px;
+    }
+  }
+  &__col {
+    width: 140px;
+    text-align: center;
+  }
+  &__social-icons {
+    background: $black url('../img/sprites.png') no-repeat;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: auto 5px;
+    &:hover {
+      background-color: $white;
+    }
+    &.vk-ico {
+      background-position: 7px -826px;
+      &:hover {
+        background-position: 7px -760px;
+      }
+    }
+    &.fb-ico {
+      background-position: 14px -549px;
+      &:hover {
+        background-position: 14px -476px;
+      }
+    }
+    &.insta-ico {
+      background-position: 10px -691px;
+      &:hover {
+        background-position: 10px -620px;
+      }
+    }
+  }
+}

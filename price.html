@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/favicon.ico" type="image/ico">
+</head>
+<body class="inner-page-body">
+    <header class='main-header'>
+        <div class="container">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="price.html" class="menu__current-page">Прайс-лист</a></li>
+                    <li><a href="market.html">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#" class="menu__login">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="inner-page">
+        <div class="container">
+            <div class="inner-page__title">
+                <h2>Barbershop borodinsky - Прайс-лист</h2>
+                <ul class="inner-page__breadcrumbs">
+                    <li><a href="index.html">Главная</a></li>
+                    <li class="current"><a href="index.html">Прайс-лист</a></li>
+                </ul>
+            </div>
+            <div class="inner-page__content">
+                <div class="inner-page__title_big">
+                    <h1>Истинно мужская классика</h1>
+                </div>
+                    <div class="inner-page__columns">
+                        <div class="inner-page__column col-1-2">
+                            <h3>Мы используем только 
+                                <br>
+                                лучшие средства:
+                            </h3>
+                            <ul>
+                                <li>Dexter oz.</li>
+                                <li>Mr. Proper</li>
+                                <li>Rl Gonzales</li>
+                                <li>Ice Mojito</li>
+                            </ul>
+                        </div>
+                        <div class="inner-page__column col-1-2">
+                            <h3>Цены на услуги 
+                                <br>
+                                наших мастеров:
+                            </h3>
+                            <table class="price-list">
+                                <tbody>
+                                    <tr>
+                                        <td>Стрижка</td>
+                                        <td>1 500 р.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Стрижка бороды</td>
+                                        <td>600 р.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>"Гусарский ус"</td>                   
+                                        <td>3999 р.</td>                   
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h3>Несколько слов о нас:</h3>
+                    <div class="inner-page__columns">
+                        <div class="inner-page__column col-1-2">
+                            <p class="inner-page__text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+                        </div>
+         
+                        <div class="inner-page__column col-1-2">
+                            <p class="inner-page__text">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв, здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="flex-row">
+                <div class="page-footer__contact col-1-3">
+                    <p>Барбершоп «Бородинский»
+                        <br>
+                        Адрес: г.Москва, ул. Собаки Павлова, д. 13
+                        <br>
+                        Телефон: +7 (495) 666-02-666
+                    </p>
+                </div>
+                <div class="page-footer__social col-1-3">
+                    <p>Тусим вместе!</p>
+                    <a href="#" class="page-footer__social-icons vk-ico"></a>
+                    <a href="#" class="page-footer__social-icons fb-ico"></a>
+                    <a href="#" class="page-footer__social-icons insta-ico"></a>
+                </div>
+                <div class="page-footer__copyright col-1-3">
+                    <div class="page-footer__col">
+                        <p>Дизайн сайта</p>
+                        <button class="btn page-footer-design">Дизайнер.рф</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <modal class="login-modal-window">
+        <form action="" class="login-modal-window__form" method="POST">
+            <h3 class="login-modal-window__title">Личный кабинет</h3>
+            <p>введите пожалуйста свой логин и пароль:</p>
+            <input type="text" class="input login-modal-window__input login-modal-window__input_log-icon" placeholder="Логин" id="login" required>
+            <input type="password" class="input login-modal-window__input login-modal-window__input_pass-icon" placeholder="Пароль" id="password" required>
+            <input type="checkbox" class='' name="" id="remember-login">
+            <label for="remember-login" class="label">Запомнить меня</label>
+            <a href="#" class="login-modal-window__restore-btn" id="restore-btn">Я забыл пароль</a>
+            <button type="submit" class="login-modal-window__submit btn">Войти</button>
+            <a href="#" class="login-modal-window__close-btn" id="close-btn"></a>
+            <a href="#" class="login-modal-window__register" id="register-btn" style="text-align: center; margin-top: 10px;">Зарегистрироваться</a>
+        </form>
+    </modal>
+
+    <script src="js/modal.js"></script>
+</body>

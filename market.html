@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/favicon.ico" type="image/ico">
+</head>
+<body class="inner-page-body">
+    <header class='main-header'>
+        <div class="container">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="price.html">Прайс-лист</a></li>
+                    <li><a href="market.html" class="menu__current-page">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#" class="menu__login">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="inner-page">
+        <div class="container">
+            <div class="inner-page__title">
+                <h2>Barbershop borodinsky - Магазин</h2>
+                <ul class="inner-page__breadcrumbs">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="market.html">Магазин</a></li>
+                    <li class="current"><a href="market.html">Средства ухода</a></li>
+                </ul>
+            </div>
+            <div class="market-container">
+                <form action="" class="market-form">
+                    <div class="market-form__section">
+                        <h3>Производители</h3>
+                        <input type="checkbox" class="market-form__checkbox" id="Baxter" checked>
+                        <label for="Baxter" class="label">Baxter of California</label>
+                        <input type="checkbox" class="market-form__checkbox" id="Am-crew">
+                        <label for="Am-crew" class="label">American crew</label>
+                        <input type="checkbox" class="market-form__checkbox" id="Dexter" checked>
+                        <label for="Dexter" class="label">Dexter oz.</label>
+                        <input type="checkbox" class="market-form__checkbox" id="Gonzales" checked>
+                        <label for="Gonzales" class="label">Rl Gonzales</label>
+                        <input type="checkbox" class="market-form__checkbox" id="Mojito">
+                        <label for="Mojito" class="label">Ice Mojito</label>
+                        <input type="checkbox" class="market-form__checkbox" id="Mr-Proper">
+                        <label for="Mr-Proper" class="label">Mr. Proper</label>
+                    </div>
+                    <div class="market-form__section">
+                        <h3>Группы товаров</h3>
+                        <input type="radio" class="market-form__radio" name="prod-type" id="shaving">
+                        <label for="shaving" class="label">Бритвенные принадлежности</label>
+                        <input type="radio" class="market-form__radio" name="prod-type" id="care">
+                        <label for="care" class="label">Средства для ухода</label>
+                        <input type="radio" class="market-form__radio" name="prod-type" id="acs">
+                        <label for="acs" class="label">Аксессуары</label>
+                    </div>
+                </form>
+        
+                <section class="market-item">
+                    <article class="market-item-card">
+                        <figure>
+                            <img src="./img/content-catalog-item-1.jpg" class="market-item-card__image" alt="Набор для путешествий">
+                        </figure>
+                        <div class="market-item-card__description">
+                            <p>Baxter of California</p>
+                            <span>Набор для путешествий</span>
+                        </div>
+                        <div class="market-item-card__price">
+                            <p>2 900 р.</p>
+                            <a href="#" class="btn">Купить</a>
+                        </div>
+                    </article>
+                    <article class="market-item-card">
+                        <figure>
+                            <img src="./img/content-catalog-item-2.jpg" class="market-item-card__image" alt="Набор для путешествий">
+                        </figure>
+                        <div class="market-item-card__description">
+                            <p>Dexter oz.</p>
+                            <span>Увлажняющий кондиционер</span>
+                        </div>
+                        <div class="market-item-card__price">
+                            <p>2 100 р.</p>
+                            <a href="#" class="btn">Купить</a>
+                        </div>
+                    </article>
+                    <article class="market-item-card">
+                        <figure>
+                            <img src="./img/content-catalog-item-3.jpg" class="market-item-card__image" alt="Набор для путешествий">
+                        </figure>
+                        <div class="market-item-card__description">
+                            <p>Rl Gonzales</p>
+                            <span>Гель на волос</span>
+                        </div>
+                        <div class="market-item-card__price">
+                            <p>1 500 р.</p>
+                            <a href="#" class="btn">Купить</a>
+                        </div>
+                    </article>
+                    <article class="market-item-card">
+                        <figure>
+                            <img src="./img/content-catalog-item-4.jpg" class="market-item-card__image" alt="Набор для путешествий">
+                        </figure>
+                        <div class="market-item-card__description">
+                            <p>Ice Mojito</p>
+                            <span>Глина для укладки</span>
+                        </div>
+                        <div class="market-item-card__price">
+                            <p>999 р.</p>
+                            <a href="#" class="btn">Купить</a>
+                        </div>
+                    </article>
+                    <article class="market-item-card">
+                        <figure>
+                            <img src="./img/content-catalog-item-5.jpg" class="market-item-card__image" alt="Набор для путешествий">
+                        </figure>
+                        <div class="market-item-card__description">
+                            <p>Mr. Proper</p>
+                            <span>Гель для душа</span>
+                        </div>
+                        <div class="market-item-card__price">
+                            <p>1 199 р.</p>
+                            <a href="#" class="btn">Купить</a>
+                        </div>
+                    </article>
+                    <article class="market-item-card">
+                        <figure>
+                            <img src="./img/content-catalog-item-6.jpg" class="market-item-card__image" alt="Набор для путешествий">
+                        </figure>
+                        <div class="market-item-card__description">
+                            <p>American Crew</p>
+                            <span>Набор для бритья</span>
+                        </div>
+                        <div class="market-item-card__price">
+                            <p>4 990 р.</p>
+                            <a href="#" class="btn">Купить</a>
+                        </div>
+                    </article>
+                    <div class="market-item__links">
+                        <a href="#" class="market-item__page-link">1</a>
+                        <a href="#" class="market-item__page-link market-item__page-link_current">2</a>
+                        <a href="#" class="market-item__page-link">3</a>
+                        <a href="#" class="market-item__page-link">4</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="flex-row">
+                <div class="page-footer__contact col-1-3">
+                    <p>Барбершоп «Бородинский»
+                        <br>
+                        Адрес: г.Москва, ул. Собаки Павлова, д. 13
+                        <br>
+                        Телефон: +7 (495) 666-02-666
+                    </p>
+                </div>
+                <div class="page-footer__social col-1-3">
+                    <p>Тусим вместе!</p>
+                    <a href="#" class="page-footer__social-icons vk-ico"></a>
+                    <a href="#" class="page-footer__social-icons fb-ico"></a>
+                    <a href="#" class="page-footer__social-icons insta-ico"></a>
+                </div>
+                <div class="page-footer__copyright col-1-3">
+                    <div class="page-footer__col">
+                        <p>Дизайн сайта</p>
+                        <button class="btn page-footer-design">Дизайнер.рф</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <modal class="login-modal-window">
+        <form action="" class="login-modal-window__form" method="POST">
+            <h3 class="login-modal-window__title">Личный кабинет</h3>
+            <p>введите пожалуйста свой логин и пароль:</p>
+            <input type="text" class="input login-modal-window__input login-modal-window__input_log-icon" placeholder="Логин" id="login" required>
+            <input type="password" class="input login-modal-window__input login-modal-window__input_pass-icon" placeholder="Пароль" id="password" required>
+            <input type="checkbox" class='' name="" id="remember-login">
+            <label for="remember-login" class="label">Запомнить меня</label>
+            <a href="#" class="login-modal-window__restore-btn" id="restore-btn">Я забыл пароль</a>
+            <button type="submit" class="login-modal-window__submit btn">Войти</button>
+            <a href="#" class="login-modal-window__close-btn" id="close-btn"></a>
+            <a href="#" class="login-modal-window__register" id="register-btn" style="text-align: center; margin-top: 10px;">Зарегистрироваться</a>
+        </form>
+    </modal>
+
+    <script src="js/modal.js"></script>
+</body>

@@ -1,0 +1,54 @@
+.main-header {
+    min-width: $small;
+    background-color: $black;
+    margin-bottom: 70px;    
+}
+
+.menu {
+    width: 100%;
+    &__list {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        li a {
+            font-size: 16px;
+            line-height: 18px;
+            padding: 26px 20px;
+            color: $white;
+            position: relative;
+            &:hover {
+                background-color:#242424;
+            }
+        }
+        li:last-child {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+            a {
+                padding-left: 50px;
+            }
+        }
+    }
+    &__current-page:after {
+        content: '';
+        position: absolute;
+        height: 5px;
+        bottom: 0px;
+        right: 20px;
+        left: 20px;
+        background-color: $white;
+    }
+    &__login {
+        position: relative; 
+        &::before {
+            @include sprites(0px, -212px, 18px, 18px);
+            top: calc(50% - 7px);
+            left: 20px;
+            opacity: 0.3;
+        }
+        &:hover:before {
+            opacity: 1;
+        }
+    }
+}
+

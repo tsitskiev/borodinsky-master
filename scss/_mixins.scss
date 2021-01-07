@@ -1,0 +1,20 @@
+@mixin sprites($x, $y, $width, $height) {
+    background: url('../img/sprites.png') no-repeat;
+    content: '';
+    position: absolute;
+    width: $width;
+    height: $height;
+    background-position: $x $y;
+}
+
+@mixin rhomb-mark($top, $left) {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    top: $top;
+    left: $left;
+    background-color: $black;
+}
+
