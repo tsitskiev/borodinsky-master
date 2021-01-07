@@ -2,7 +2,7 @@
 
 <p>
   Название сайта: Barbershop<br>
-  Домен: <a href="//pages.github/barber-huyarber</a>
+  Домен: <a href="//not-ready-yet</a>
 </p>
 
 <h2>Общие технические требования</h2>
